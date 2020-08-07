@@ -1,8 +1,18 @@
-export const getRandomIdx = (len, prevIdx) => {
-  const newIdx = Math.random() * len | '0';
+const COLORS = [
+  'red',
+  'green',
+  'blue',
+  'black',
+  'orange',
+];
 
-  if (prevIdx === newIdx) return getRandomIdx(len, prevIdx);
-  return newIdx;
+export const getRandomColor = (prev) => {
+  const newIdx = Math.random() * COLORS.length | '0';
+  const newColor = COLORS[newIdx];
+
+  if (prev === 'blue') return 'green';
+  if (newColor === prev) return getRandomColor(prev);
+  return newColor;
 }
 
 export const printNumber = () => {
