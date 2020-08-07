@@ -14,7 +14,7 @@ const PROBLEMS = {
 
 
 export default function App() {
-  const [page, setPage] = useState(3);
+  const [page, setPage] = useState(null);
 
   const goToPage = (pageNo) => () => {
     setPage(pageNo);
