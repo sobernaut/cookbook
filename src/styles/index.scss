@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+
+button {
+  border: none;
+  border-radius: 20px;
+  padding: 25px;
+  color: white;
+  background: #ee6e73;
+  outline: none;
+  margin: auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+.cursor {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: crimson;
+}
+
+.colorful {
+  margin-top: 20px;
+}
+
+.history {
+  flex: 1;
+  padding: 25px;
+}
+
+.color {
+  text-transform: uppercase;
+}

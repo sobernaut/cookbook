@@ -1,0 +1,24 @@
+.image-background {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../../../assets/background.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-block {
+  width: 500px;
+  height: 300px;
+  border: 5px solid white;
+}
+
+@media only screen and (max-width: 600px) {
+  .image-background {
+    justify-content: flex-start;
+  }
+  .image-block {
+    width: 100vw;
+    height: 100vh;
+  }
+}
